@@ -101,12 +101,6 @@ namespace RSA
             return result;
         }
 
-        static string Base64Encode(string message)
-        {
-            var result = Encoding.UTF8.GetBytes(message);
-            return Convert.ToBase64String(result);
-        }
-
         static string RSAEncoding(string inputMessage, int e, int n)
         {
             var inputEncodedBytes = Encoding.UTF8.GetBytes(inputMessage);
